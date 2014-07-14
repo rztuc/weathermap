@@ -15,6 +15,7 @@
 
 	LibreNMS:
 	*/5 * * * * /opt/librenms/html/weathermap/map-poller.php >> /dev/null 2>&1
+9. If you are installing this into Observium then you can use the navbar-custom.inc.php by putting it into /opt/observium/html/includes/.
 
 **** IMPORTANT SECURITY *****
 
