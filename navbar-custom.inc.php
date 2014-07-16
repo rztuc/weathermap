@@ -11,7 +11,7 @@
 <ul class="dropdown-menu">
 
 <?php
-'fdb' => 'FDB Tables');
+
 $rendered_maps = array();
 if ($weathermap_dir = opendir('weathermap/maps/')) {
     while (false !== ($weathermap_file = readdir($weathermap_dir))) {
