@@ -1,7 +1,8 @@
 <?php
 
 // This file was created by Wolfgang (markus@best-practice.se)
-// To install, copy this into your observium install directory such as /opt/observium/html/includes/
+// This is for the older navbar setup < r5670
+// To install, copy this into your observium install directory such as /opt/observium/html/includes/navbar-custom.inc.php
 
 ?>
 
