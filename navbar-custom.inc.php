@@ -1,5 +1,10 @@
 <?php
- 
+
+// This file was created by Wolfgang (markus@best-practice.se)
+// To install, copy this into your observium install directory such as /opt/observium/html/includes/
+
+?>
+
 $rendered_maps = array();
 if ($weathermap_dir = opendir('weathermap/maps/')) { //Open directory
     while (false !== ($weathermap_file = readdir($weathermap_dir))) { //while there are files to process
