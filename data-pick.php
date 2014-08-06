@@ -434,7 +434,7 @@ if(isset($_REQUEST['command']) && $_REQUEST["command"]=='node_step1')
 				opener.document.forms["frmMain"].node_infourl.value = info_url;
 			}
 			opener.document.forms["frmMain"].node_hover.value = graph_url;
-                        opener.document.forms["frmMain"].node_new_name.value = graphid;
+                        opener.document.forms["frmMain"].node_new_name.value = name;
                         opener.document.forms["frmMain"].node_label.value = name;
 		}
 		self.close();		
