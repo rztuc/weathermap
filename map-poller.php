@@ -60,14 +60,19 @@ $cli = TRUE;
 
 $conf_dir = 'configs/';
 
+if ($debug) { echo "Conf dir: $conf_dir\n"; }
 if(is_dir($conf_dir)) {
 	if($dh = opendir($conf_dir)) {
+		if ($debug) { echo "Opened directory $conf_dir\n"; }
 		while (($file = readdir($dh)) !== false) {
 			if( "." != $file && ".." != $file && ".htaccess" != $file && "index.php" != $file){
+				if ($debug) { echo "File to be run is $file\n"; }
 				if ($config['rrdcached']) {
 					$cmd = "php ./weathermap --config $conf_dir/$file --base-href $weathermap_url --daemon ".$config['rrdcached'];
+					if ($debug) { echo "Running with rrdcached $cmd\n"; }
 				} else {
 					$cmd = "php ./weathermap --config $conf_dir/$file --base-href $weathermap_url";
+					if ($debug) { echo "Running $cmd\n"; }
 				}
 				$fp = popen($cmd, 'r'); 
 				$read = fread($fp, 1024);
